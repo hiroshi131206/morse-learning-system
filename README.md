@@ -98,11 +98,60 @@
 
 ### 前提条件
 
+#### Dockerを使用する場合
 - Docker & Docker Compose
-- Node.js 18+ (ローカル開発時)
-- Python 3.11+ (ローカル開発時)
+
+#### Dockerを使用しない場合（推奨）
+- Node.js 16+
+- Python 3.9+
+- pip
 
 ### クイックスタート
+
+#### 方法1: Dockerなしで起動（推奨）
+
+**Windows:**
+```bash
+# リポジトリをクローン
+git clone https://github.com/YOUR_USERNAME/morse-learning-system.git
+cd morse-learning-system
+
+# 起動スクリプトを実行
+start.bat
+```
+
+**Mac/Linux:**
+```bash
+# リポジトリをクローン
+git clone https://github.com/YOUR_USERNAME/morse-learning-system.git
+cd morse-learning-system
+
+# 起動スクリプトに実行権限を付与
+chmod +x start.sh
+
+# 起動スクリプトを実行
+./start.sh
+```
+
+**手動で起動:**
+```bash
+# 1. バックエンドのセットアップと起動
+cd backend
+pip install -r requirements.txt
+python -m uvicorn app.main:app --host 0.0.0.0 --port 8001 --reload
+
+# 2. 新しいターミナルを開いてフロントエンドのセットアップと起動
+cd frontend
+npm install
+npm run dev
+```
+
+アクセス:
+- **フロントエンド**: http://localhost:5173
+- **バックエンドAPI**: http://localhost:8001
+- **APIドキュメント**: http://localhost:8001/docs
+
+#### 方法2: Dockerで起動
 
 ```bash
 # リポジトリをクローン
