@@ -1,14 +1,17 @@
 # Morse Learning System
 
-**モールス信号学習支援・分析システム**
-
+[![GitHub](https://img.shields.io/badge/GitHub-hiroshi131206%2Fmorse--learning--system-blue?logo=github)](https://github.com/hiroshi131206/morse-learning-system)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109+-green?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-18+-blue?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue?logo=typescript)](https://www.typescriptlang.org/)
 
+**モールス信号学習支援・分析システム**
+
 モールス信号の習得を支援する、学習進捗管理および技能分析ツールです。
+
+🔗 **Repository**: https://github.com/hiroshi131206/morse-learning-system
 
 ## 📋 目次
 
