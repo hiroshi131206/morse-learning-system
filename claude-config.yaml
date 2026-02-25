@@ -1,0 +1,49 @@
+# Morse Learning System - Claude Universal Config
+
+name: morse-learning-system
+version: 1.0.0
+
+# 言語選択
+languages:
+  - python
+  - typescript
+
+# バックエンドフレームワーク
+backend:
+  - fastapi
+
+# フロントエンドフレームワーク
+frontend:
+  - react
+
+# インフラ
+infrastructure:
+  - docker
+
+# ドメイン固有スキル
+domains:
+  - web-security
+
+# エージェント有効化
+agents:
+  code-reviewer:
+    enabled: true
+    contexts: [python, typescript, fastapi, react]
+    custom_checks:
+      - "SQLite queries are parameterized (no SQL injection)"
+      - "Response time data is stored in milliseconds"
+      - "Database schema follows normalization principles"
+  tdd-guide:
+    enabled: true
+    contexts: [python, typescript]
+  security-reviewer:
+    enabled: true
+    contexts: [web-security]
+
+# コマンド有効化
+commands:
+  - review
+  - tdd
+  - test
+  - debug
+  - feature
